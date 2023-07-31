@@ -1,10 +1,3 @@
-response = requests.get(URL)
-res = response.json()
-print(res)
-print()
-print()
-condition = res["weather"][0]["main"]
-description = res["weather"][0]["description"]"""
 from tkinter import *
 import requests
 import json

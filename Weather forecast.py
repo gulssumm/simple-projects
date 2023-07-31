@@ -1,14 +1,3 @@
-"""import requests
-URL = "https://www.google.com"
-response = requests.get(URL)
-print(response)
-#output: <Response [200]>
-#This output is telling us that our request has been received,
-#understood and processed successfully.
-
-appid = "016711efd04f8c5452680f5f39f8c677"
-city_name= input("Please,enter a city name: ")
-URL = f"https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={appid}"
 response = requests.get(URL)
 res = response.json()
 print(res)
@@ -86,7 +75,7 @@ else:
 
 def city_name():
     #API CALL
-    api_key="016711efd04f8c5452680f5f39f8c677"
+    api_key=(your private api key)
     api_request=requests.get("https://api.openweathermap.org/data/2.5/weather?q="
                                +E1.get() + "&units=metric&appid="+api_key)
     api = json.loads(api_request.content)

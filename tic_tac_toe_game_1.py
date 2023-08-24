@@ -10,7 +10,7 @@ def button(frame):
 def change_choice():
     global choice_1
     for i in ['O', 'X']:
-        if(i != choice_1):
+        if i != choice_1:
             choice_1 = i
             break
 
